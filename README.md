@@ -1,8 +1,8 @@
 # Custom Catalogue (base)
 
-Minimal Android base following the **Zenith** UI / tech stack. LastWave is intentionally ignored for now.
+Minimal Android base with Material 3 Expressive UI.
 
-## Tech stack (Zenith-aligned)
+## Tech stack
 
 - Kotlin `2.2.10`, AGP `9.2.1`, Gradle `9.4.1` (wrapper committed)
 - `compileSdk 36` (minor 1), `minSdk 30`, `targetSdk 36`, Java 11
@@ -15,7 +15,7 @@ Package: `com.customcatalogue.app` (debug: `com.customcatalogue.app.debug`)
 
 ## What's in the base
 
-- `MainActivity` (splash + edge-to-edge, like Zenith)
+- `MainActivity` (splash + edge-to-edge)
 - `AppNav` with 3 destinations: Home / Buttons / Settings
 - Home: counter card, toggle, snackbar, navigation buttons
 - Buttons gallery: filled / tonal / elevated / outlined / text buttons, chips, slider
@@ -58,5 +58,4 @@ Workflow: `.github/workflows/android-apk.yml`
 
 ## Notes
 
-- `reference-repos/` (Zenith + LastWave references) is local-only and git-ignored. Do not commit it.
-- To extend toward full Zenith stack later: add Room/KSP, DataStore, WorkManager, Coil, Retrofit/Moshi per `reference-repos/Zenith/gradle/libs.versions.toml`.
+- `reference-repos/` is local-only and git-ignored. Do not commit it.

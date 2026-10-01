@@ -23,7 +23,7 @@ android {
 
     buildTypes {
         release {
-            // R8 full mode: minify + shrink (Zenith-style release)
+            // R8 full mode: minify + shrink for release
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(

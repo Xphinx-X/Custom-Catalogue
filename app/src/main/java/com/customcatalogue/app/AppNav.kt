@@ -149,7 +149,7 @@ fun HomeScreen(
             Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text("Welcome to Custom Catalogue", style = MaterialTheme.typography.headlineSmall)
                 Text(
-                    "Zenith-style M3 Expressive base: dynamic color, edge-to-edge, splash, navigation.",
+                    "M3 Expressive base: dynamic color, edge-to-edge, splash, navigation.",
                     style = MaterialTheme.typography.bodyMedium
                 )
                 Text(
@@ -242,7 +242,7 @@ fun SettingsScreen() {
             Switch(checked = expressive, onCheckedChange = { expressive = it })
         }
         Text(
-            "This is a starter screen. Wire DataStore/Room here later following the Zenith reference.",
+            "This is a starter screen. Wire DataStore/Room here later.",
             style = MaterialTheme.typography.bodyMedium
         )
     }

@@ -1,5 +1,5 @@
-# Zenith-aligned version catalog (trimmed to base UI stack).
-# Full Zenith stack: AGP 9.2.1, Kotlin 2.2.10, Compose BOM 2025.02.00,
+# Version catalog for the base UI stack.
+# AGP 9.2.1, Kotlin 2.2.10, Compose BOM 2025.02.00,
 # Material3 Expressive 1.5.0-alpha17, activity-compose, lifecycle, splash, navigation.
 [versions]
 agp = "9.2.1"

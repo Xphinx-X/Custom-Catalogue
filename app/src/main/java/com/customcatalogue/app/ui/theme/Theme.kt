@@ -63,8 +63,8 @@ private val LightColorScheme = lightColorScheme(
 )
 
 /**
- * Zenith-style expressive theme: dynamic color by default, expressive
- * surface-container tweak optional (mirrors ZenithTheme expressiveColors flag).
+ * Expressive theme: dynamic color by default, expressive
+ * surface-container tweak optional.
  */
 @Composable
 fun CustomCatalogueTheme(

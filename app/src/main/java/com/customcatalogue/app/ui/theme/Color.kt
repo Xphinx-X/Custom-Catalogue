@@ -2,7 +2,7 @@ package com.customcatalogue.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Base palette aligned with Zenith (Material 3 Expressive).
+// Base palette (Material 3 Expressive).
 val PrimaryLight = Color(0xFF4D568D)
 val OnPrimaryLight = Color(0xFFFFFFFF)
 val PrimaryContainerLight = Color(0xFFDEE0FF)
