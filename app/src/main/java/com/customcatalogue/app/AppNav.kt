@@ -23,7 +23,11 @@ import androidx.navigation.compose.rememberNavController
 import com.customcatalogue.app.ui.screens.AnimationsScreen
 import com.customcatalogue.app.ui.screens.ButtonsScreen
 import com.customcatalogue.app.ui.screens.ChipsScreen
+import com.customcatalogue.app.ui.screens.FabMenuScreen
 import com.customcatalogue.app.ui.screens.HomeScreen
+import com.customcatalogue.app.ui.screens.ProgressScreen
+import com.customcatalogue.app.ui.screens.SelectionScreen
+import com.customcatalogue.app.ui.screens.SheetsDialogsScreen
 import com.customcatalogue.app.ui.screens.ToastsScreen
 
 private fun titleFor(route: String?): String = when (route) {
@@ -31,6 +35,10 @@ private fun titleFor(route: String?): String = when (route) {
     "chips" -> "Chips"
     "toasts" -> "Toasts & Snackbars"
     "animations" -> "Animations"
+    "progress" -> "Progress & Loading"
+    "sheets" -> "Sheets & Dialogs"
+    "selection" -> "Selection"
+    "fabs" -> "FAB Menu"
     else -> "Custom Catalogue"
 }
 
@@ -82,6 +90,18 @@ fun AppNav(@Suppress("UNUSED_PARAMETER") windowSizeClass: WindowSizeClass) {
             }
             composable("animations") {
                 AnimationsScreen()
+            }
+            composable("progress") {
+                ProgressScreen()
+            }
+            composable("sheets") {
+                SheetsDialogsScreen(snackbarHostState = snackbarHostState)
+            }
+            composable("selection") {
+                SelectionScreen()
+            }
+            composable("fabs") {
+                FabMenuScreen(snackbarHostState = snackbarHostState)
             }
         }
     }

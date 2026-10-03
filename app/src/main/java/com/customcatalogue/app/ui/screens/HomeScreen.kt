@@ -10,10 +10,14 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Animation
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.FilterList
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.SmartButton
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -58,6 +62,30 @@ val catalogueEntries = listOf(
         title = "Animations",
         subtitle = "Visibility, crossfade, scale, animated content",
         icon = Icons.Filled.Animation
+    ),
+    CatalogueEntry(
+        route = "progress",
+        title = "Progress & Loading",
+        subtitle = "Wavy indicators, loading pills, classic bars",
+        icon = Icons.Filled.Refresh
+    ),
+    CatalogueEntry(
+        route = "sheets",
+        title = "Sheets & Dialogs",
+        subtitle = "Bottom sheets, alerts, time picker",
+        icon = Icons.Filled.Menu
+    ),
+    CatalogueEntry(
+        route = "selection",
+        title = "Selection",
+        subtitle = "Switches, checkboxes, sliders, segments",
+        icon = Icons.Filled.Check
+    ),
+    CatalogueEntry(
+        route = "fabs",
+        title = "FAB Menu",
+        subtitle = "Expandable Zenith-style action menu",
+        icon = Icons.Filled.Add
     )
 )
 
